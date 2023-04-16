@@ -1,0 +1,13 @@
+name = "my-project"
+main = "src/index.ts"
+compatibility_date = "2023-04-16"
+
+routes = [
+	{ pattern = "email2web.matthewaveryusa.com", custom_domain = true },
+	{ pattern = "email2web2.matthewaveryusa.com", custom_domain = true }
+]
+
+[[r2_buckets]]
+binding = 'MY_BUCKET' # <~ valid JavaScript variable name
+bucket_name = 'email2web'
+preview_bucket_name = 'email2web_dev'
